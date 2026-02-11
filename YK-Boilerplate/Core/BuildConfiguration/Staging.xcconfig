@@ -1,0 +1,11 @@
+// Staging.xcconfig
+// Staging / UAT environment settings
+
+#include "Common.xcconfig"
+
+PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.boilerplate.staging
+PRODUCT_NAME = Boilerplate Staging
+URL_SCHEME = boilerplatestaging
+BASE_URL = https:\/\/jsonplaceholder.typicode.com
+ENVIRONMENT = staging
+VXHUB_ID = YOUR_VXHUB_ID_HERE

@@ -1,0 +1,9 @@
+// Common.xcconfig
+// Shared build settings across all environments
+
+MARKETING_VERSION = 1.0.0
+CURRENT_PROJECT_VERSION = 1
+
+// Apple credentials (replace with your values)
+// APPLE_ID = <YOUR_APPLE_ID>
+// TEAM_ID = <YOUR_TEAM_ID>

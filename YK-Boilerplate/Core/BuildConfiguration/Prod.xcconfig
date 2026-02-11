@@ -1,0 +1,11 @@
+// Prod.xcconfig
+// Production environment settings
+
+#include "Common.xcconfig"
+
+PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.boilerplate
+PRODUCT_NAME = Boilerplate
+URL_SCHEME = boilerplate
+BASE_URL = https:\/\/jsonplaceholder.typicode.com
+ENVIRONMENT = prod
+VXHUB_ID = YOUR_VXHUB_ID_HERE
