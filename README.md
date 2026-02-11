@@ -130,4 +130,4 @@ VxHubManager bridges the [VxHub SDK](https://github.com/ersel95/VxHub-iOS) — n
 
 ## License
 
-Private template. Not for public distribution.
+MIT
