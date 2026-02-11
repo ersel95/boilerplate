@@ -4,12 +4,10 @@
 iOS SwiftUI boilerplate with MVVM-C architecture, VxHub SDK integration, and multi-environment support. Duplicate this project to start new iOS apps rapidly.
 
 ## Quick Start (New Project)
-1. Duplicate this folder and rename
-2. Update bundle IDs in `Dev.xcconfig`, `Staging.xcconfig`, `Prod.xcconfig`
-3. Update `VXHUB_ID` in each xcconfig file with your hub ID
-4. Update app name in xcconfig `PRODUCT_NAME` fields
-5. Run `xcodegen generate` to regenerate the Xcode project
-6. Update `Assets/` with your app's colors, icons, and fonts
+```bash
+bash <(curl -fsSL https://raw.githubusercontent.com/ersel95/boilerplate/main/create-project.sh)
+```
+The script handles renaming, bundle ID, xcodegen, and git init automatically.
 
 ## Architecture: MVVM-C (Model-View-ViewModel-Coordinator)
 
@@ -54,9 +52,9 @@ YK-Boilerplate/
 ├── Modules/                 # Feature modules (Splash, Auth, Home, etc.)
 ├── SharedUI/
 │   ├── Components/          # AppButton, AppTextField, LoadingView, Toast
-│   ├── Theme/               # CoreColors, Typography, Font+Custom
+│   ├── Theme/               # Typography, Font+Custom
 │   └── Modifiers/           # SwiftUI view modifiers
-└── Assets/                  # xcassets, fonts, images
+└── Assets/                  # xcassets, fonts
 ```
 
 ## VxHub SDK Integration
@@ -164,7 +162,6 @@ protocol APITargetType {
 - Use `@MainActor` on ViewModels
 - Never import UIKit in SwiftUI views (use coordinator for UIKit needs)
 - Keep views dumb — all logic in ViewModels
-- Use `CoreColors` for all colors, never hardcode
 - Use `Font.customFont(size:weight:)` for typography
 
 ## Dependencies
